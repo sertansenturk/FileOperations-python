@@ -1,2 +1,5 @@
 *.pyc
 *.*~
+build/
+dist/
+fileoperations_python.egg-info/
