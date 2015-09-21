@@ -3,7 +3,7 @@
 from setuptools import setup, find_packages
 
 setup(name='fileoperations_python',
-      version='0.1',
+      version='0.2',
       description='Basic I/O stuff for python',
       author='Sertan Senturk',
       author_email='contact@sertansenturk.com',
