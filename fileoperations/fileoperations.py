@@ -1,7 +1,8 @@
 import os
+import fnmatch
 
-def getFileNamesInDir(dir_name, extension = '.mp3', skip_foldername = '', 
-					verbose = False):
+def getFileNamesInDir(dir_name, keyword = '.mp3', skip_foldername = '', 
+					matchCase = True, verbose = False):
 	names = []
 	folders = []
 	fullnames = []
@@ -22,11 +23,11 @@ def getFileNamesInDir(dir_name, extension = '.mp3', skip_foldername = '',
 	# walk all the subdirectories
 	for (path, dirs, files) in os.walk(dir_name):
 		for f in files:
-			if f.lower()[-len(extension):] == extension:
-				if skip_foldername not in path.split(os.sep)[1:]:
-					folders.append(unicode(path, 'utf-8'))
-					names.append(unicode(f,'utf-8'))
-					fullnames.append(os.path.join(path,f))
+			hasKey = fnmatch.fnmatch(f, keyword) if matchCase else fnmatch.fnmatch(f.lower(), keyword.lower())
+			if hasKey and skip_foldername not in path.split(os.sep)[1:]:
+				folders.append(unicode(path, 'utf-8'))
+				names.append(unicode(f,'utf-8'))
+				fullnames.append(os.path.join(path,f))
 
 	if verbose:
 		print "> Found " + str(len(names)) + " files."
