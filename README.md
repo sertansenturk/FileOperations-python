@@ -1,4 +1,4 @@
-# FileOperations-python
+# fileoperations-python
 A repository fo simple I/O operations
 
 Currently it only consists of a single function, which recursively gets all the names of the files below a directory. 
@@ -25,7 +25,7 @@ fullnames, folders, names = getFileNamesInDir(dir_name, keyword='*.mp3', skip_fo
 # names             : list of the filenames without the foldername
 ```
 
-AUTHORS
+Authors
 =======
 
 Sertan Şentürk	contact@sertansenturk.com
