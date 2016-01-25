@@ -2,7 +2,7 @@ import os
 import fnmatch
 
 def getFileNamesInDir(dir_name, keyword = '*.mp3', skip_foldername = '', 
-					match_case = True, verbose = False):
+					match_case = True, verbose = None):
 	names = []
 	folders = []
 	fullnames = []
