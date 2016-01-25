@@ -1,7 +1,7 @@
 import os
 import fnmatch
 
-def getFileNamesInDir(dir_name, keyword = '.mp3', skip_foldername = '', 
+def getFileNamesInDir(dir_name, keyword = '*.mp3', skip_foldername = '', 
 					matchCase = True, verbose = False):
 	names = []
 	folders = []
