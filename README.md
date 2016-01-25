@@ -26,4 +26,6 @@ fullnames, folders, names = getFileNamesInDir(dir_name, keyword='*.mp3', skip_fo
 ```
 
 AUTHORS
+=======
+
 Sertan Şentürk	contact@sertansenturk.com
