@@ -7,9 +7,9 @@ Usage
 =======
 
 ```python
-from fileoperations.fileoperations import getFileNamesIndDir
+from fileoperations.fileoperations import get_filenames_in_dir
 
-fullnames, folders, names = getFileNamesInDir(dir_name, keyword='*.mp3', skip_foldername='', 
+fullnames, folders, names = get_filenames_in_dir(dir_name, keyword='*.mp3', skip_foldername='', 
                                               matchCase=True, verbose=False)
 
 # Inputs:

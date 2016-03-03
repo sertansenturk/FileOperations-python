@@ -34,9 +34,3 @@ def get_filenames_in_dir(dir_name, keyword='*.mp3', skip_foldername='',
     if verbose:
         print "> Found " + str(len(names)) + " files."
     return fullnames, folders, names
-
-# alias function for backwards compatibility
-def getFileNamesInDir(dir_name, keyword='*.mp3', skip_foldername='',
-                      match_case=True, verbose=None):
-    get_filenames_in_dir(dir_name, keyword=keyword, skip_foldername=skip_foldername,
-                         match_case=match_case, verbose=verbose)
