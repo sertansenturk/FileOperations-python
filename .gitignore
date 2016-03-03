@@ -3,3 +3,4 @@
 build/
 dist/
 fileoperations_python.egg-info/
+.idea
