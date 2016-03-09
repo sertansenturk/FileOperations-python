@@ -14,7 +14,7 @@ fullnames, folders, names = get_filenames_in_dir(dir_name, keyword='*.mp3', skip
 
 # Inputs:
 # dir_name          : the foldername
-# keyword	          :	the keyword to search
+# keyword           :	the keyword to search
 # skip_foldername   : an optional foldername to skip searching
 # match_case        : flag for case matching
 # verbose           : verbose flag
