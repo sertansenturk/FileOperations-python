@@ -3,7 +3,7 @@
 from setuptools import setup, find_packages
 
 setup(name='fileoperations_python',
-      version='1.0',
+      version='1.1',
       description='Basic I/O stuff for python',
       author='Sertan Senturk',
       license='agpl 3.0',
