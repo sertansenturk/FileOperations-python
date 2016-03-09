@@ -25,6 +25,22 @@ fullnames, folders, names = get_filenames_in_dir(dir_name, keyword='*.mp3', skip
 # names             : list of the filenames without the foldername
 ```
 
+Installation
+=======
+
+You can easily install the package using pip. In terminal:
+
+    cd path/to/fileoperations-python
+    pip install .
+    
+Don't forget to change the folder path with the correct path in your machine.
+
+If you want to be able to edit files and have the changes be reflected, then
+install the repository like this instead:
+
+    cd path/to/fileoperations-python
+    pip install -e .
+
 Authors
 =======
 
