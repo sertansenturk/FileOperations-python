@@ -27,8 +27,14 @@ def get_filenames_in_dir(dir_name, keyword='*.mp3', skip_foldername='',
             hasKey = (fnmatch.fnmatch(f, keyword) if match_case else
                       fnmatch.fnmatch(f.lower(), keyword.lower()))
             if hasKey and skip_foldername not in path.split(os.sep)[1:]:
-                folders.append(unicode(path, 'utf-8'))
-                names.append(unicode(f, 'utf-8'))
+                try:
+                    folders.append(unicode(path, 'utf-8'))
+                except TypeError:  # already unicode
+                    folders.append(path)
+                try:
+                    names.append(unicode(f, 'utf-8'))
+                except TypeError:  # already unicode
+                    names.append(path)
                 fullnames.append(os.path.join(path, f))
 
     if verbose:
