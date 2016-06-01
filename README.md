@@ -9,8 +9,9 @@ Usage
 ```python
 from fileoperations.fileoperations import get_filenames_in_dir
 
-fullnames, folders, names = get_filenames_in_dir(dir_name, keyword='*.mp3', skip_foldername='', 
-                                              matchCase=True, verbose=False)
+fullnames, folders, names = get_filenames_in_dir(
+    dir_name, keyword='*.mp3', skip_foldername='', matchCase=True, 
+    verbose=False)
 
 # Inputs:
 # dir_name          : the foldername
@@ -35,8 +36,7 @@ You can easily install the package using pip. In terminal:
     
 Don't forget to change the folder path with the correct path in your machine.
 
-If you want to be able to edit files and have the changes be reflected, then
-install the repository like this instead:
+If you want to be able to edit files and have the changes be reflected, then install the repository like this instead:
 
     cd path/to/fileoperations-python
     pip install -e .
