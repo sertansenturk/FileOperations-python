@@ -1,10 +1,9 @@
 # fileoperations_python
 A repository fo simple I/O operations
 
-Currently it only consists of a two functions. 
-
 Usage
 =======
+Currently, it only consists of a two functions:
 
 ```python
 from fileoperations.fileoperations import get_filenames_in_dir
