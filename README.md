@@ -1,7 +1,7 @@
-# fileoperations-python
+# fileoperations_python
 A repository fo simple I/O operations
 
-Currently it only consists of a single function, which recursively gets all the names of the files below a directory. 
+Currently it only consists of a two functions. 
 
 Usage
 =======
@@ -9,6 +9,7 @@ Usage
 ```python
 from fileoperations.fileoperations import get_filenames_in_dir
 
+# recursively gets all the names of the files below a directory
 fullnames, folders, names = get_filenames_in_dir(
     dir_name, keyword='*.mp3', skip_foldername='', match_case=True, 
     verbose=False)
