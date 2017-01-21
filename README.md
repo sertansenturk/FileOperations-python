@@ -10,7 +10,7 @@ Usage
 from fileoperations.fileoperations import get_filenames_in_dir
 
 fullnames, folders, names = get_filenames_in_dir(
-    dir_name, keyword='*.mp3', skip_foldername='', matchCase=True, 
+    dir_name, keyword='*.mp3', skip_foldername='', match_case=True, 
     verbose=False)
 
 # Inputs:
